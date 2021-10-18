@@ -5,31 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Ui</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h1>Ui Quiz</h1></header>
-    <form>
-        <label for="name">1.What's your name:</label><br>
-        <div><input type="text" id="name"></div>
-        <button type="button">Submit</button>
-        <div><input type="text" id="namev"></div>
-    </form>
-    <form>
-        <p><label for="question1">2.Javascript is typed language</label></p>
-        <p><input type="radio" id="yes">yes</input></p>
-        <p><input type="radio" id="no">no</input></p>
-        <p><label for="question2">3.DOM?</label></p>
-        <p><input type="radio" id="dom">Document Object Mirror</input></p>
-        <p><input type="radio" id="dom2">Document Object Modal</input></p>
-        <p><label for="question3">4.const x= y.push() what's 'y'?</label></p>
-        <p><input type="radio" id="string">A String</input></p>
-        <p><input type="radio" id="array">An Array</input></p>
-        <p><label for="question4">4.An object instance is?</label></p>
-        <p><input type="radio" id="dom">A constructor</input></p>
-        <p><input type="radio" id="dom2">An Occurence of the same Object</input></p>
-        <button type="button">Send</button>
+    <header>
+        <h1>UI QUIZ</h1>
+        <div class="score"></div>
+    </header>
+    <main>
+        <form><div class="questions">
+            <h2>Questions</h2>
+            <label for="name">1.What's your name:</label><br>
+            <div><input type="text" id="name"></div>
+            <button class="button" id="btn">Submit</button>
+            <div><input type="text" id="namev"></div>
+        </form>
+        <form>
+            <p><label for="question1">2.Javascript is typed language</label></p>
+            <p><input type="radio" id="yes">yes</input></p>
+            <p><input type="radio" id="no">no</input></p>
+            <p><label for="question2">3.DOM?</label></p>
+            <p><input type="radio" id="dom">Document Object Mirror</input></p>
+            <p><input type="radio" id="dom2">Document Object Modal</input></p>
+            <p><label for="question3">4.const x= y.push() what's 'y'?</label></p>
+            <p><input type="radio" id="string">A String</input></p>
+            <p><input type="radio" id="array">An Array</input></p>
+            <p><label for="question4">5.An object instance is?</label></p>
+            <p><input type="radio" id="dom">A constructor</input></p>
+            <p><input type="radio" id="dom2">An Occurence of the same Object</input></p>
+            <button class="button" id="btnn">Send</button>
 
 
-    </form>
+        </form></div>
+    </main>
+    <script src ="script.js"></script>
 </body>
 </html>
