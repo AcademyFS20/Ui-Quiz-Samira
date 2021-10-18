@@ -13,17 +13,20 @@
         <div class="score"></div>
     </header>
     <main>
-        <form name="form"><div class="questions">
+        <form name="form1" class="formulaire">
+            <div class="questions">
             <h2>Questions</h2>
             <label for="name">1.What's your name:</label><br>
             <div><input type="text" id="namea" value=""></div>
-            <button class="button" id="btn" value="send">Submit</button>
+            <!--button class="button" id="btn" value="send">Submit</button-->
+            <input type="submit" name="send" value="Submit">
             <div><input type="text" id="namev"></div>
+            </div>
         </form>
-        <form>
-            <p><label for="question1">2.Javascript is typed language</label></p>
-            <p><input type="radio" id="yes">yes</p>
-            <p><input type="radio" id="no">no</p>
+        <form class="formulaire2">
+            <p><label for="question1">2.Javascript is a typed language</label></p>
+            <p><input type="radio" id="yes">Yes</p>
+            <p><input type="radio" id="no">No</p>
             <p><label for="question2">3.DOM?</label></p>
             <p><input type="radio" id="dom">Document Object Mirror</p>
             <p><input type="radio" id="dom2">Document Object Modal</p>
@@ -36,7 +39,7 @@
             <button class="button" id="btnn">Send</button>
 
 
-        </form></div>
+        </form>
     </main>
     <script src ="script.js"></script>
 </body>

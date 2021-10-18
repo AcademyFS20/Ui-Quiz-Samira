@@ -1,20 +1,31 @@
-const inputName=document.getElementById(namea);
-const inputbtnsub=document.getElementById(btn);
-const inputNamee=document.getElementById(namev);
+const inputName=document.getElementById('namea');
+/*const inputBtnSub=document.getElementById('btn');*/
+const inputNamee=document.getElementById('namev');
+const form1 = document.querySelector('.formulaire');
+const regex = /^[a-zA-Z]{6,20}$/;
+
+form1.addEventListener('submit',e=>{
+
+    e.preventDefault();
+
+    if(regex.test(inputName.value.trim())){
+
+      alert("yes")
+    }
+    else{
+
+        alert('no')
+    }
+
+    window.scrollTo({top:0,behavior:"smooth"})
 
 
-const form=document.getElementsByName(form);
-form.addEventlistener('button', (e)=>{
-    let message=[]
-    if (inputName.value===''|| inputName.value===null)
-    {
-        message.push('name is required')
-        if(message.length>0){
-            e.preventDefault()
+})
 
-        errorElement.innertext=message.join(',')
-        }
-    }})
+
+
+
+
 function ValidateName(inputName) 
 {
 if (/^[a-z A-Z]{6,20}$/.test(form.namea.value))
