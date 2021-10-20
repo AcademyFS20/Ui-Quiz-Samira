@@ -3,6 +3,8 @@ const inputName=document.getElementById('namea');
 const inputNamee=document.getElementById('namev');
 const form1 = document.querySelector('.formulaire');
 const regex = /^[a-zA-Z]{6,20}$/;
+const formulaire2 = document.querySelectorAll('[type="radio"]', checked)
+
 
 form1.addEventListener('submit',e=>{
 
@@ -14,41 +16,52 @@ form1.addEventListener('submit',e=>{
     }
     else{
 
-        alert('no')
+        alert('Enter a valid name')
     }
 
-    window.scrollTo({top:0,behavior:"smooth"})
+    /*window.scrollTo({top:0,behavior:"smooth"})*/
 
 
 })
 
+document.getElementByID("btnn").addEventListener("click", result);
 
-
-
-
-function ValidateName(inputName) 
-{
-if (/^[a-z A-Z]{6,20}$/.test(form.namea.value))
-{
-    return (true)
-}
-else
-{ 
-    alert("You have entered an invalid name!")
-    return (false)
-
-    
-}}
-/*function ValidateName(inputName){
-
-    let namea = /^([a-z A-Z]).{6-20}$/.test(value)
-    if(inputName.value.match(namea))
+function result() {
+    let score=0;
+    if (document.getElementsById('no').checked)
     {
-       return true;
+        score++;
     }
-    else{
-        return false;
-    }}*/
+    if (document.getElementsById('dom2').checked)
+    {
+        score++;
+    }
+    if (document.getElementsById('array').checked)
+    {
+        score++;
+    }
+    if (document.getElementsById('ob2').checked)
+    {
+        score++;
+    }
+    
+}
+
+function animaterToScore(score){
+    let scoreHolder = document.getElementById("result");
+    scoreHolder.classList.remove("d-none");
+    score = parseInt(score);
+    step = 0;
+    setInterval(() => {
+        if(step >= score){ return false;}
+        step++;
+        document.querySelector(".score").innerText = " "+step+"% ";
+    }, 50);
+}
+
+
+
+
 
 
 

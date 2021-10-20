@@ -2,7 +2,10 @@ html {
     font-size: 62,5%;
 }
 *{
-    background-color: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-color:#ffc0cb;
+    box-sizing: border-box;
+    
+    
     
 }
 
@@ -19,6 +22,7 @@ h1{
 }
 .score{
     background: rgb(184, 182, 182);
+
 }
 .questions{
     background: white;
@@ -38,5 +42,9 @@ h2{
     z-index: 0;
     }
 .button:hover{
-    background-color: white;
+    background-color: rgb(240, 228, 228);
+}
+.section-questions{
+    background-color: pink;
+    
 }

@@ -10,36 +10,38 @@
 <body>
     <header>
         <h1>UI QUIZ</h1>
-        <div class="score"></div>
+        <div class="score" id="result"></div>
     </header>
     <main>
         <form name="form1" class="formulaire">
-            <div class="questions">
-            <h2>Questions</h2>
-            <label for="name">1.What's your name:</label><br>
-            <div><input type="text" id="namea" value=""></div>
-            <!--button class="button" id="btn" value="send">Submit</button-->
-            <input type="submit" name="send" value="Submit">
-            <div><input type="text" id="namev"></div>
+            <div class="section-questions">
+                <div class="questions">
+                    <h2>Questions</h2>
+                    <label for="name">1.What's your name:</label><br>
+                    <div><input type="text" id="namea" value=""></div>
+                    <button class="button" id="btn" value="send">Submit</button>
+                    <!--input type="submit" name="send" value="Submit"-->
+                    <div><input type="text" id="namev"></div>
+                    </div>
+                </form>
+                <form class="formulaire2">
+                    <p><label for="question1">2.Javascript is a typed language</label></p>
+                    <p><input type="radio" id="yes" name="a">Yes</p>
+                    <p><input type="radio" id="no" name="a">No</p>
+                    <p><label for="question2">3.DOM?</label></p>
+                    <p><input type="radio" id="dom" name="b">Document Object Mirror</p>
+                    <p><input type="radio" id="dom2" name="b">Document Object Modal</p>
+                    <p><label for="question3">4.const x= y.push() what's 'y'?</label></p>
+                    <p><input type="radio" id="string" name="c">A String</p>
+                    <p><input type="radio" id="array" name="c">An Array</p>
+                    <p><label for="question4">5.An object instance is?</label></p>
+                    <p><input type="radio" id="ob" name="d">A constructor></p>
+                    <p><input type="radio" id="ob2" name="d">An Occurence of the same Object</p>
+                    <button class="button" id="btnn">Send</button>
+
+
+                </form>
             </div>
-        </form>
-        <form class="formulaire2">
-            <p><label for="question1">2.Javascript is a typed language</label></p>
-            <p><input type="radio" id="yes">Yes</p>
-            <p><input type="radio" id="no">No</p>
-            <p><label for="question2">3.DOM?</label></p>
-            <p><input type="radio" id="dom">Document Object Mirror</p>
-            <p><input type="radio" id="dom2">Document Object Modal</p>
-            <p><label for="question3">4.const x= y.push() what's 'y'?</label></p>
-            <p><input type="radio" id="string">A String</p>
-            <p><input type="radio" id="array">An Array</p>
-            <p><label for="question4">5.An object instance is?</label></p>
-            <p><input type="radio" id="dom">A constructor></p>
-            <p><input type="radio" id="dom2">An Occurence of the same Object</p>
-            <button class="button" id="btnn">Send</button>
-
-
-        </form>
     </main>
     <script src ="script.js"></script>
 </body>
